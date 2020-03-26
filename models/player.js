@@ -19,10 +19,6 @@ module.exports = function (sequelize, DataTypes) {
             allowNull: false,
             validate: {
                 len: [5, 25],
-                isUnique: connection.validateIsUnique(
-                    'username',
-                    'This username already exists.'
-                )
             }
         },
         email: {
@@ -33,18 +29,22 @@ module.exports = function (sequelize, DataTypes) {
                 len: [5,75],
                 isEmail: {
                     msg: 'Please enter a valid email address'
-                },
-                isUnique: connection.validateIsUnique(
-                    'email',
-                    'This email already exists.'
-                )
-            }
+                }
+            }    
         },
         password: {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
                 len: [8,128]
+            }
+        },
+        rating: {
+            type: DataTypes.INTEGER,
+            allowNull: false,
+            validate: {
+                min: 1,
+                max: 6
             }
         }
     })
