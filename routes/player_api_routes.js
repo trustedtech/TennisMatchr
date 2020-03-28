@@ -7,6 +7,16 @@ module.exports = function(app) {
         });
     });
 
+    app.get("/api/players/:id", function(req, res) {
+        db.Player.findOne({
+            where: {
+                id: req.params.id
+            }
+        }).then(function(dbPlayer){
+            res.json(dbPlayer)
+        })
+    })
+
     app.post("/api/players", function(req, res){
         db.Player.create({
             first_name: req.body.first_name,
