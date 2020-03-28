@@ -6,6 +6,16 @@ module.exports = function(app) {
             res.json(dbEvent)
         });
     });
+
+    appget("/api/events/:id", function(req, res){
+        db.Event.findOne({
+            where: {
+                id: req.params.id
+            }
+        }).then(function(dbEvent){
+            res.json(dbEvent)
+        })
+    })
     
     app.post("/api/events", function(req, res){
         db.Event.create({
