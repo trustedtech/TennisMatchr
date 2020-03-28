@@ -7,7 +7,7 @@ module.exports = function(app) {
         });
     });
 
-    appget("/api/events/:id", function(req, res){
+    app.get("/api/events/:id", function(req, res){
         db.Event.findOne({
             where: {
                 id: req.params.id
