@@ -10,14 +10,14 @@ body {
     margin-bottom: 10px;
     width: 50%;
     border-radius: 10px;
-    box-shadow: 0 0 10px #8B856B;
+    box-shadow: 0 0 30px #8B856B;
 }
 
 .container {
     margin-top: 20px;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 20px #8B856B;
+    box-shadow: 0 0 30px #8B856B;
 }
 
 .navbar.navbar-expand-lg.navbar-light {
