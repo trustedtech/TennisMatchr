@@ -4,7 +4,7 @@
   "description": "UCFCB Project 2",
   "main": "app.js",
   "scripts": {
-    "start": "node server.js",
+    "start": "node app.js",
     "lint": "eslint **/*.js --quiet",
     "test": "npm run lint"
   },
