@@ -6,52 +6,67 @@
             </span>
             <a id="navbar-brand" class="navbar-brand" href="/">Home</a>        
             <a id="navbar-brand" class="navbar-brand" href="/event">Events</a>       
-            <a id="navbar-brand" class="navbar-brand" href="/roster">Roster</a>           
+            <a id="navbar-brand" class="navbar-brand" href="/player">Players</a>           
         </nav>
     </div>
     <div class="container" id="login-signup">
         <div class="row">
             <div class="col">
                 <h3>Login</h3>
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Username">
+                <form action="/login" method="POST">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="uname" name="uname" class="form-control" placeholder="Username">
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col">
+                            <input type="password" id="pword" name="pword" class="form-control" placeholder="Password">
+                        </div>
                     </div>
-                </div>  
-                <div class="row">
-                    <div class="col">
-                        <input type="text" class="form-control" placeholder="Password">
+                    <div class="row">
+                        <div class="col">
+                            <input type="submit" id="login" name="login" value="Login">
+                        </div>
                     </div>
-                </div>
-                <button type="button" class="btn">Login</button>
+                </form>            
             </div>
             <div class="col">
               <h1 id="or">Or</h1>
             </div>
             <div class="col">
-                <h3>Sign Up</h3>
-                <form>
+                <h3>Register</h3>
+                <form action="/register" method="POST">
                     <div class="row">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="First name">
+                            <input type="text" id="fname" name="fname" class="form-control" placeholder="First name">
                         </div>
                     </div>  
                     <div class="row">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Last name">
+                            <input type="text" id="lname" name="lname" class="form-control" placeholder="Last name">
                         </div>
                     </div>
                     <div class="row">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Username">
+                            <input type="text" id="email" name="email" class="form-control" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="uname" name="uname" class="form-control" placeholder="Username">
                         </div>
                     </div>  
                     <div class="row">
                         <div class="col">
-                            <input type="text" class="form-control" placeholder="Password">
+                            <input type="password" id="pword" name="pword" class="form-control" placeholder="Password">
                         </div>
                     </div>
-                    <button type="button" class="btn">Sign Up</button>
+                    <div class="row">
+                        <div class="col">
+                            <input type="submit" id="register" name="register" value="Register">
+                        </div>
+                    </div>
                 </form>
             </div>
           </div>

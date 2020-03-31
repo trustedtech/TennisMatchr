@@ -3,16 +3,20 @@ module.exports = function (sequelize, DataTypes) {
         creator: {
             type: DataTypes.STRING,
             allowNull: false,
+            // references: {
+            //     model: Player,
+            //     key: 'id'
+            // },
             validate: {
                 len:[1]
             }
         },
         event_date: {
-            type: DataTypes.DATE,
+            type: DataTypes.DATEONLY,
             allowNull: false
         },
         event_time: {
-            type: DataTypes.DATE,
+            type: DataTypes.STRING,
             allowNull: false
         },
         event_type: {
