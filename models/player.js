@@ -36,7 +36,7 @@ module.exports = function (sequelize, DataTypes) {
             type: DataTypes.STRING,
             allowNull: false,
             validate: {
-                len: [8,128]
+                len: [5,128]
             }
         },
         rating: {
