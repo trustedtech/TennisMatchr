@@ -10,12 +10,30 @@ FUNCTIONALITIES:
     -   View player profiles
     -   Enter match scores
     -   View match results
-    
 
+
+HTML PAGES
+    -   landing page with signon elements
+    -   
 
 ROUTES:
 
+    HTML
+    -   "/"             index.handlebars    Index page login/signup form
+    -   "/events"       event.handlebars    Event page
+    -   "/players"      players.handlebars  Player list
+    -   "/events/:id"                       individual event
+    -   "/player/:id"                       individual player
 
+    API
+    
+
+INTEGRATIONS:
+
+    -   User Authentication:  Passport
+    -   Database Seed
+    -   API Datasourcing   
+    -
 
 
 DATABASE:
