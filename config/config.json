@@ -1,16 +1,16 @@
 {
   "development": {
     "username": "root",
-    "password": "root",
-    "database": "TennisMatchr_db",
+    "password": "password",
+    "database": "tennis_matchr_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
   },
   "test": {
     "username": "root",
-    "password": "root",
-    "database": "TennisMatchr_db",
+    "password": "pasword",
+    "database": "tennis_matchr_db",
     "host": "127.0.0.1",
     "dialect": "mysql",
     "operatorsAliases": false
