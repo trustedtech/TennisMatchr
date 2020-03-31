@@ -1,4 +1,4 @@
-USE tennismatchr_db;
+USE tennis_matchr_db;
 
 INSERT INTO players (first_name, last_name, username, email, password, rating, createdAt, updatedAt)
 VALUES 
