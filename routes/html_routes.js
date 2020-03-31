@@ -44,7 +44,7 @@ module.exports = function(app) {
             email: req.body.email
         })
         .then(function(user) {
-            res.send('User ' + user.username + ' was created successfully.  You may go back and login now.  ');
+            res.render('register')           
         })
         .catch((err) => console.log(err));
     });
