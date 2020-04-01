@@ -74,6 +74,19 @@ module.exports = function(app) {
 
     app.post('/event/create', function(req, res){
 
+        db.Event.create({
+            creator: req.body.creator,
+            event_date: req.body.event_date,
+            event_time: req.body.event_time,
+            event_type: req.body.event_type,
+            style: req.body.style,
+            players_count: req.body.players_count,
+            notes: req.body.notes
+        })
+        .then(function(user) {
+            res.redirect('/event')           
+        })
+        .catch((err) => console.log(err));
     });
 
 
