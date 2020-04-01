@@ -78,12 +78,10 @@ module.exports = function(app) {
 
 
     app.get('/player', function(req,res){
-        db.Player.findAll({
-            raw: true
-        })
-        .then((player) => {
-            // console.log(player);
-            res.render('player', player); 
+        db.Player.findAll({})
+        .then((player) => {return run.buildPlayers(player)
+            .then((data) => {
+            res.render('player', data); 
         });       
     });
-}
+})}
