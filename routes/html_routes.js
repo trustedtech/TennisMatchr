@@ -41,7 +41,8 @@ module.exports = function(app) {
             last_name: req.body.lname,
             username: req.body.uname,
             password: req.body.pword,
-            email: req.body.email
+            email: req.body.email,
+            rating: req.body.rating
         })
         .then(function(user) {
             res.render('register')           
