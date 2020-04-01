@@ -1,6 +1,6 @@
-USE tennis_matchr_db;
+USE ylw935ilg6lase5h;
 
-INSERT INTO Players (first_name, last_name, username, email, password, rating, createdAt, updatedAt)
+INSERT INTO Players ( first_name, last_name, username, email, password, rating, createdAt, updatedAt)
 VALUES 
     ("Andre", "Agassi", "aagassi", "aagassi@tennis.com", "aa12345", 6, "2020-03-29T09:00:00", "2020-03-29T09:00:00"),
     ("Pete", "Sampras", "psampras", "psampras@tennis.com", "ps12345", 6, "2020-03-29T09:00:00", "2020-03-29T09:00:00"),
