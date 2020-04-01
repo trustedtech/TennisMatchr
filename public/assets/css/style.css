@@ -9,13 +9,11 @@ body {
     margin-bottom: 10px;
     width: 50%;
     border-radius: 10px;
-    box-shadow: 0 0 30px #8B856B;
 }
 .container {
     margin-top: 20px;
     margin-bottom: 30px;
     border-radius: 10px;
-    box-shadow: 0 0 30px #8B856B;
 }
 .navbar.navbar-expand-lg.navbar-light {
     background-color: #8B856B;
@@ -28,6 +26,7 @@ a.navbar-brand:hover {
 }
 #login-signup {
     background-color: #D2C17C;
+    box-shadow: 0 0 30px #8B856B;
 }
 h1 {
     padding-top: 100px;
@@ -48,3 +47,4 @@ h3 {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
