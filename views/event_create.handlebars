@@ -1,0 +1,67 @@
+<div class="container">
+    <img src="/public/assets/images/TennisMatchr.png" alt="tennisBanner" class="center">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <span class="navbar-brand" href="#">
+            <img src="/public/assets/images/unnamed.jpg" width="30" height="30" alt="player">
+        </span>
+        <a id="navbar-brand" class="navbar-brand" href="/">Home</a>        
+        <a id="navbar-brand" class="navbar-brand" href="/event">Events</a>       
+        <a id="navbar-brand" class="navbar-brand" href="/player">Players</a>           
+    </nav>
+</div>
+<div class="container">
+    <div class="row">
+        <form action="/event/create" method="POST">
+            <div class="row">
+                <div class="col">
+                    <label for="creator">Your Full Name: </label>
+                    <input type="text" id="creator" name="creator" class="form-control" placeholder="Your Name">
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col">
+                    <label for="event_date">Event Date: </label>
+                    <input type="date" id="event_date" name="event_date" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="event_time">Event Time: </label>
+                    <input type="time" id="event_time" name="event_time" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="event_type">Event Type: </label>
+                    <select id="event_type" name="event_type">
+                        <option value="casual">casual</option>
+                        <option value="practice">practice</option>
+                        <option value="match">match</option>
+                        <option value="tournament">tournament</option>
+                    </select>
+                </div>
+            </div>  
+            <div class="row">
+                <div class="col">
+                    <label for="style">Event Style: </label>
+                    <select id="style" name="style">
+                        <option value="singles">singles</option>
+                        <option value="doubles">doubles</option>
+                        <option value="open">open</option>
+                    </select>                
+                </div>                
+            </div>
+            <div class="row">
+                <div class="col">
+                    <label for="players_count">Player Count: </label>
+                    <input type="number" id="players_count" name="players_count" class="form-control">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <input type="submit" id="createevent" name="createevent" value="Create Event">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

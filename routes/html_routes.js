@@ -68,6 +68,15 @@ module.exports = function(app) {
     });
 
 
+    app.get('/event/create', function(req, res){
+        res.render('event_create')
+    });
+
+    app.post('/event/create', function(req, res){
+
+    });
+
+
     app.get('/player', function(req,res){
         db.Player.findAll({
             raw: true
